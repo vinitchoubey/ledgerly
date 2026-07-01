@@ -595,6 +595,7 @@ async def process_receipt(
         client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
         response = client.chat.completions.create(
             model="meta-llama/llama-4-scout-17b-16e-instruct",
+            # model="meta-llama/llama-4-maverick-17b-128e-instruct",
             messages=[{
                 "role": "user",
                 "content": [
@@ -633,6 +634,8 @@ async def process_receipt(
         return {"status": "success", "count": len(clean_items)}
 
     except Exception as e:
+        import traceback
+        traceback.print_exc()
         raise HTTPException(status_code=500, detail=str(e))
     finally:
         if os.path.exists(file_location):
