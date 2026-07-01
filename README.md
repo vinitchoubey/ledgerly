@@ -7,16 +7,16 @@ A full-stack personal finance web app that uses AI to scan receipts, track spend
 ## Screenshots
 
 ### Login Screen
-![Login Screen](Screenshots/login.png)
+![Login Screen](screenshots/login.png)
 
 ### Dashboard
-![Dashboard](Screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.png)
 
 ### Receipt Upload
-![Receipt Upload](Screenshots/receipt.png)
+![Receipt Upload](screenshots/receipt.png)
 
 ### Monthly Report
-![Monthly Report](Screenshots/monthly_report.png)
+![Monthly Report](screenshots/monthly_report.png)
 
 ---
 
