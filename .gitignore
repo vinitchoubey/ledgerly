@@ -1,0 +1,27 @@
+cat > /mnt/user-data/outputs/.gitignore << 'EOF'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Local database (we now use Neon in production)
+backend/data.json
+backend/data/
+backend/smartbudget.db
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Env files - NEVER commit secrets
+.env
+*.env
+
+# OS junk
+.DS_StoreS
+Thumbs.db
+EOF
+echo "DONE"
